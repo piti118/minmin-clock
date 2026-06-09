@@ -61,7 +61,7 @@ XPT2046_Touchscreen ts(TOUCH_CS, /*irq=*/255);
 
 // ── Timing ───────────────────────────────────────────────────────
 #define NTP_RESYNC_MS  21600000UL  // re-sync NTP every 6 hours
-#define LOOP_MS        33          // main loop tick (~30 fps)
+#define LOOP_MS        16          // main loop tick (~60 fps)
 #define FF_TICK        (LOOP_MS / 100.0f)  // scale factor for per-tick animation values
 #define TIME_KERN      6            // extra px between each time character
 
